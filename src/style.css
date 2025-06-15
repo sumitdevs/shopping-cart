@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@theme {
+  --color-accent-900:#FB2C2C;
+  --font-primary:"Lato", sans-serif;
+  --text-heading-h1:3rem;
+  --text-heading-h2:2.5rem;
+  --text-heading-h3:2.062rem;
+  --text-heading-h4:1.750rem;
+  --text-heading-h5:1.438rem;
+  --text-heading-h6:1.188rem;
+  --text-tag:0.812rem;
+}
+
+@layer base{
+  body{
+    @apply text-neutral-500 font-primary text-heading-h6 font-normal leading-relaxed;
+  }
+  h1,h2,h3,h4,h5,h6{
+    @apply font-primary font-semibold text-neutral-700 leading-tight;
+  }
+  h1{
+    @apply text-heading-h1
+  }
+  h2{
+    @apply text-heading-h2
+  }
+  h3{
+    @apply text-heading-h3
+  }
+  h4{
+    @apply text-heading-h4
+  }
+  h5{
+    @apply text-heading-h5
+  }
+  h6{
+    @apply text-heading-h6 
+  }
+  button{
+    @apply cursor-pointer
+  }
+}
